@@ -21,10 +21,10 @@ end
 
 
 def now_serving (array)
-  if x.length == 0
+  if array.length == 0
     "There is nobody waiting to be served!"
   else
     puts "Currently serving #{array.first}."
-    x.shift
+    array.shift
   end
 end
