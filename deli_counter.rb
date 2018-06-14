@@ -1,8 +1,9 @@
 def line(array)
   counter = 1
+  list = Array.new()
   array.each do |x|
-    list = Array.new()
-    list << "#{counter}. x"
+    list << "#{counter}. #{x}"
+    counter+=1
   end
   list.join(" ")
   puts "The line is currently: #{list}"
