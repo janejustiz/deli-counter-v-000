@@ -5,7 +5,7 @@ def line(array)
     counter = 1
     list = []
     array.each do |x|
-      list.push(counter. x)
+      list << counter". "x
       counter+=1
     end
     list.join()
