@@ -8,8 +8,9 @@ def line(array)
       list << ("#{counter}. #{x}")
       counter+=1
     end
-    list.join("<3")
-    puts "The line is currently: #{list}"
+    list.join["<3"]
+    puts "#{list}"
+    The line is currently: 
   end
 end
 
