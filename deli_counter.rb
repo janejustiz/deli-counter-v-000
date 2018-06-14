@@ -12,6 +12,7 @@ def join(array)
   array.each do |x|
     list << "#{x}"
   end
+  list.join()
 end
 
 def take_a_number(line,name)
