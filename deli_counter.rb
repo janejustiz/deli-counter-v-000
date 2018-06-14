@@ -1,5 +1,3 @@
-katz_deli=[]
-
 def line(array)
   counter = 1
   array.each do |x|
@@ -19,5 +17,7 @@ def now_serving (array)
   if x.length == 0
     "There is nobody waiting to be served!"
   else
-    puts
+    puts "Currently serving #{array.first}."
     x.shift
+  end
+end
