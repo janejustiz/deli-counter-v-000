@@ -1,12 +1,15 @@
 def line(array)
-  counter = 1
-  list = Array.new()
-  array.each do |x|
-    list << "#{counter}. #{x}"
-    counter+=1
-  end
-  list.join(" ")
-  puts "The line is currently: #{list}"
+  if array.length==0
+    puts "The line is currently empty."
+  else
+    counter = 1
+    list = Array.new()
+    array.each do |x|
+      list << "#{counter}. #{x}"
+      counter+=1
+    end
+    list.join(" ")
+    puts "The line is currently: #{list}"
 end
 
 
