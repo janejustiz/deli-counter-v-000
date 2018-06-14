@@ -3,7 +3,7 @@ def line(array)
     puts "The line is currently empty."
   else
     counter = 1
-    list = Array.new()
+    list = []
     array.each do |x|
       list << "#{counter}. #{x}"
       counter+=1
@@ -15,9 +15,10 @@ end
 
 
 def take_a_number(line,name)
-  array << name
+  line << name
   puts "Welcome, #{name}. You are number #{line.length} in line."
 end
+
 
 def now_serving (array)
   if x.length == 0
