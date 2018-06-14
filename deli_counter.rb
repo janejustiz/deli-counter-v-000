@@ -2,18 +2,17 @@ def line(array)
   if array.length==0
     puts "The line is currently empty."
   else
-    puts "The line is currently: #{join(array)}"
+    counter = 1
+    list = []
+    array.each do |x|
+      list << "#{counter}. #{x}"
+      counter+=1
+    end
+    list.join()
+    puts "The line is currently: #{list}"
   end
 end
 
-def join(array)
-  list=[]
-  counter+=1
-  array.each do |x|
-    list << "#{x}"
-  end
-  list.join()
-end
 
 def take_a_number(line,name)
   line << name
